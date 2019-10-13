@@ -6,15 +6,25 @@
   "author": "Felipesg12 <felipesg.12@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev" : "nodemon src/server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest",
+    "posttest":"NODE_ENV=test sequelize db:migrate:undo:all"
   },
   "dependencies": {
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "mysql2": "^1.7.0",
     "sequelize": "^5.19.6"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
     "nodemon": "^1.19.3",
-    "sequelize-cli": "^5.5.1"
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.0"
   }
 }
