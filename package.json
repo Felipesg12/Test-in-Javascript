@@ -5,7 +5,16 @@
   "repository": "git@github.com:Felipesg12/Test-in-Javascript.git",
   "author": "Felipesg12 <felipesg.12@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "dev" : "nodemon src/server.js"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.19.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3",
+    "sequelize-cli": "^5.5.1"
   }
 }
