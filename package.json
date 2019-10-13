@@ -1,0 +1,11 @@
+{
+  "name": "TDD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Felipesg12/Test-in-Javascript.git",
+  "author": "Felipesg12 <felipesg.12@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
